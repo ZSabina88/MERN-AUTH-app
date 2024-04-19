@@ -1,0 +1,79 @@
+ :root {
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+
+   color: #213547;
+   background-color: #fff;
+
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+
+   --color-primary: #316FEA;
+   --color-gray-dark: #D3D8DC;
+   --color-gray-light: #E3E6E9;
+ }
+
+
+ body {
+   margin: 0;
+   max-width: 1280px;
+   min-width: 320px;
+   min-height: 100vh;
+ }
+
+ .flex__row {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+ }
+
+
+
+ .flex__column {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .flex__column h2 {
+   font-size: 1.875rem;
+   margin: 0 0 2.5rem 0;
+ }
+
+ input{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 0 0 0.625rem;
+ }
+
+ .error{
+  margin: 0;
+  color: red;
+  font-size: 0.75rem;
+  padding-left: 10px;
+ }
+
+.link a{
+  display: flex;
+  justify-content: flex-end;
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+}
+@media screen and (max-width: 22rem), (min-width: 16rem){
+  .flex__row {
+    gap: 0.5rem;
+  }
+  .flex__column h2 {
+    margin: 0 0 2.5rem 0;
+    text-align: center;
+  }
+}

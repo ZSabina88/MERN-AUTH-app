@@ -1,0 +1,23 @@
+.break {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-gray-light);
+    position: relative;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.break::before,
+.break::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid var(--color-gray-light);
+    margin: auto;
+    
+}
+.break::before{
+    margin-right: 5px;
+}
+.break::after{
+    margin-left: 5px;
+}
