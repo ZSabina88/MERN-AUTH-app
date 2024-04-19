@@ -9,7 +9,7 @@ import ProtectedRoutes from './components/ProtectedRoutes';
 import UserProfile from './pages/UserProfile';
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "https://mern-auth-app-dmen.onrender.com";
 axios.defaults.withCredentials = true;
 
 const router = createBrowserRouter([
